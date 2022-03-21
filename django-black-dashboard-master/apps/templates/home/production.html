@@ -1,0 +1,70 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Maps {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="title">Production</h5>
+        <p class="category">Features</p>
+      </div>
+      <div class="card-body all-icons">
+        <div class="row">
+          <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <a href="#">abc</a>
+            </div>
+          </div>
+          <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <a href="#">abc</a>
+            </div>
+          </div>
+          <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <a href="#">abc</a>
+            </div>
+          </div>
+          <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <a href="#">abc</a>
+            </div>
+          </div>
+          <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <a href="#">abc</a>
+            </div>
+          </div>
+          <div class="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6">
+            <div class="font-icon-detail">
+              <a href="#">abc</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <!--  Google Maps Plugin    -->
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      demo.initGoogleMaps();
+    });
+  </script>
+  
+{% endblock javascripts %}
