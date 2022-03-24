@@ -1,0 +1,79 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Tables {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card ">
+      <div class="card-header">
+        <h4 class="card-title"> Citrix-Health-Check-Up</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table tablesorter " id="">
+            <thead class=" text-primary">
+              <tr>
+                <th>
+                  Server Name
+                </th>
+                <th>
+                  Logged On User
+                </th>
+                <th>
+                  User Names
+                </th>
+                <th class="text-center">
+                  Avg CPU uUtilization
+                </th>
+                <th class="text-center">
+                  Memory Utilization
+                </th>
+                <th class="text-center">
+                  C Drive Utilization
+                </th>
+                <th class="text-center">
+                  E Drive Utilization
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  abc
+                </td>
+                <td>
+                  abc
+                </td>
+                <td>
+                  abc
+                </td>
+                <td class="text-center">
+                  abc
+                </td>
+                <td class="text-center">
+                  abc
+                </td>
+                <td class="text-center">
+                  abc
+                </td>
+                <td class="text-center">
+                  abc
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

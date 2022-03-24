@@ -1,0 +1,76 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Tables {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card ">
+      <div class="card-header">
+        <h4 class="card-title"> Market Status Data</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table tablesorter " id="">
+            <thead class=" text-primary">
+              <tr>
+                <th>
+                  SYMBOL
+                </th>
+                <th>
+                  BID
+                </th>
+                <th>
+                  ASK
+                </th>
+                <th class="text-center">
+                  PREVIOUS CLOSE
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  AAPL
+                </td>
+                <td>
+                  Passed
+                </td>
+                <td>
+                  Passed
+                </td>
+                <td class="text-center">
+                  Passed
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  NVDA
+                </td>
+                <td>
+                  Passed
+                </td>
+                <td>
+                  Passed
+                </td>
+                <td class="text-center">
+                  Passed
+                </t0d>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
