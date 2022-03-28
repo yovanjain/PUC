@@ -3,27 +3,70 @@
 {% block title %} Dashboard {% endblock %} 
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  max-height: 500px;
+  border: 1rem;
+  height: 480px; /* Should be removed. Only for demonstration */
+}
+h2 {
+  margin-top: 10rem;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+{% endblock stylesheets %}
 
 {% block content %}
 
-    <div class="row">
+    <div class="row mr-0 ml-0">
 
-      <div class="col-12">
-        <div class="card card-chart">
-          <div class="card-header ">
+      <div class="col-12 mr-0 ml-0">
+        <div class="card card-chart mt-3">
+          <div class="card-body">
             <div class="row">
-              <div class="col-sm-6 text-left">
-                <a href="/development.html"><button type="button" class="btn btn-primary btn-lg">Development</button></a>
-                <a href="/production.html"><button type="button" class="btn btn-secondary btn-lg">Production</button></a>
+              <div class="column text-center" style="background-color:#aaa;">
+                <a href="">
+                  <h2>SOP FLEXTRADE</h2>
+                </a>
+              </div>
+              <div class="column" style="background-color:rgb(28, 173, 48);">
+                <a href="">
+                  <h2>OPSRAMP</h2>
+                </a> 
+              </div>
+              <div class="column" style="background-color:#ccc;">
+                <a href="">
+                  <h2>INTERNAL</h2>
+                </a>
+              </div>
+              <div class="column" style="background-color:#ddd;">
+                <a href="">
+                  <h2>UNLINK</h2>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="card-body">
-            <div class="chart-area">
-              <canvas id="chartBig1"></canvas>
-            </div>
-          </div>
         </div>
       </div>
 
