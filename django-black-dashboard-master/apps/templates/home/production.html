@@ -3,106 +3,86 @@
 {% block title %} Maps {% endblock %} 
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}
+<style>
+  .column {
+  float: center;
+  width: 50%;
+  padding: 20px;
+  max-height: 500px;
+  border: 1rem;
+  height: 230px;
+}
+h2 {
+  margin-top: 5rem;
+}
+
+.row-box {
+  margin-left: 10rem;
+  display:flex;
+  flex-wrap: nowrap;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .row-box {
+    margin-right: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .row-box {
+    margin-right: 0px;
+    display: block;
+    margin-left: 10px;
+  }
+  .column{
+    width: auto;
+    padding: inherit;
+  }
+}
+</style>
+{% endblock stylesheets %}
 
 {% block content %}
 
-<div class="row">
+<div class="row mr-0 ml-0 mt-2">
   <div class="col-md-12">
     <div class="card">
-      <div class="card-header">
-        <h5 class="title">Production</h5>
-        <p class="category">Features</p>
-      </div>
       <div class="card-body all-icons">
-        <div class="row">
-          <div class="font-icon-list col-lg-12 col-md-6 col-sm-6 col-xs-6 col-xs-6">
-            <h5 class="text-center">Market Status Data</h5>
-            <div class="font-icon-detail">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="card ">
-                    <div class="card-body">
-                      <div class="table-responsive">
-                        <table class="table tablesorter " id="">
-                          <thead class=" text-primary">
-                            <tr>
-                              <th>
-                                SYMBOL
-                              </th>
-                              <th>
-                                BID
-                              </th>
-                              <th>
-                                ASK
-                              </th>
-                              <th class="text-center">
-                                PREVIOUS CLOSE
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>
-                                AAPL
-                              </td>
-                              <td>
-                                Passed
-                              </td>
-                              <td>
-                                Passed
-                              </td>
-                              <td class="text-center">
-                                Passed
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                NVDA
-                              </td>
-                              <td>
-                                Passed
-                              </td>
-                              <td>
-                                Passed
-                              </td>
-                              <td class="text-center">
-                                Passed
-                              </t0d>
-                            </tr>                       
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
+        <div class="row p-2 row-box">
+          <div class="column text-center col-md-5 mr-2 ml-2" style="background-color:#aaa;">
+            <a href="/market_status_data.html">
+              <h2>Market Status Data</h2>
+            </a>
           </div>
-          <div class="font-icon-list col-lg-12 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-            <h5 class="text-center">Citrix Health Check Up</h5>
-            <div class="font-icon-detail">
-              <a>abc</a>
-            </div>
-          </div>    
-        </div>
-      </div>
-      <div class="card-body all-icons">
-        <div class="row">
-          <div class="font-icon-list col-lg-12 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-            <h5 class="text-center">System Health Monitoring</h5>
-            <div class="font-icon-detail">
-              <a href="#">abc</a>
-            </div>
+          <div class="column text-center col-md-5 mr-2 ml-2" style="background-color:#aaa;">
+            <a href="/system_health_monitoring.html">
+              <h2 >System Health Monitoring</h2>
+            </a>
           </div>
-          <div class="font-icon-list col-lg-12 col-md-3 col-sm-4 col-xs-6 col-xs-6">
-            <h5 class="text-center">Process Monitoring</h5>
-            <div class="font-icon-detail">
-              <a href="#">abc</a>
-            </div>
-          </div>    
         </div>
+        <div class="row p-2 row-box">
+          <div class="column text-center col-md-5 mr-2 ml-2" style="background-color:#aaa;">
+            <a href="/citrix_health_check_up.html">
+              <h2>Citrix Health Check Up</h2>
+            </a>
+          </div>
+          <div class="column text-center col-md-5 mr-2 ml-2" style="background-color:#aaa;">
+            <a href="/process_monitoring.html">
+              <h2>Process Monitoring</h2>
+            </a>
+          </div>
+        </div>   
+        </div> 
       </div>
     </div>
   </div>
